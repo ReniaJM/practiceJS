@@ -1,5 +1,8 @@
 html{
-  background: royalblue;
+  background-image: url("http://i1079.photobucket.com/albums/w507/Renia861/grunge-watercolor-stained-texture-background-free-thumb49_zps5eucb1i1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   font-size: 15px;
 }
@@ -16,7 +19,7 @@ body{
 .clock{
   width: 30rem;
   height: 30rem;
-  border: 20px solid white;
+  border: 20px solid black;
   border-radius: 50%;
   margin: 50px auto;
   position: relative;
@@ -43,5 +46,42 @@ body{
   width: 100%;
   height: 100%;
   transform: translateY(-3px);
+}
+
+//.....
+
+:root {
+  --base:#ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+
+
+}
+
+img{
+  width: 30%;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+
+}
+
+.h1{
+  color: var(--base);
+}
+input{
+  width: 100px;
+}
+.controls{
+  display: flex;
+  flex-direction: column;
+
+}
+
+h2{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+
 }
 

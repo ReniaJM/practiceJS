@@ -21,4 +21,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(setDate, 1000);
 
+
+    // .....
+
+    const allInputs= document.querySelectorAll(".controls input")
+
+    
+    function handleUpdate() {
+        const suffix = this.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+        
+    }
+
+    allInputs.forEach(input => input.addEventListener("change" ,handleUpdate));
+    allInputs.forEach(input => input.addEventListener("mousemove" ,handleUpdate));
+
 });
